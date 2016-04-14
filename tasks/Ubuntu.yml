@@ -7,7 +7,7 @@
   tags: installation
 
 - name: Add repository
-  lineinfile: dest=/etc/apt/sources.list.d/rethinkdb.list line="deb http://download.rethinkdb.com/apt precise main"
+  lineinfile: dest=/etc/apt/sources.list.d/rethinkdb.list line="deb http://download.rethinkdb.com/apt {{ ansible_distribution_release }} main"
   tags: installation
 
 - name: Add key
